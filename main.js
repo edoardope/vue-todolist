@@ -30,22 +30,20 @@ createApp({
       this.todos[index].done = !this.todos[index].done;
     },
 
-    addt() {
-      let nuovaTask = {
-        text: this.valoreInput,
-        done: false,
-        tag: this.tagSelect
-      };
-      this.todos.push(nuovaTask);
-      this.valoreInput = '';
-
-      console.log(tag-select)
+    addt() { 
+      if (this.valoreInput.length >= 1) {
+        let nuovaTask = {
+          text: this.valoreInput,
+          done: false,
+          tag: this.tagSelect
+        };
+        this.todos.push(nuovaTask);
+        this.valoreInput = '';
+      }
     },
 
     deleteTask(index) {
-      console.log('ciao')
       this.todos.splice(index, 1);
-      console.log('ciao')
     }
   }
 }).mount('#app');

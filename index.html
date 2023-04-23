@@ -17,8 +17,8 @@
       </header>
       <!-- menu -->
       <section id="menu">
-        <button id="bottone1" @click="addt">Add Task</button>
-        <input v-model="valoreInput" class="txt" type="text">
+        <button id="bottone1" @click="addt" @keyup.enter="addt">Add Task</button>
+        <input v-model="valoreInput" class="txt" type="text" minlength="1">
         <select name="pets" id="tag-select" v-model="tagSelect">
             <option value="">--choose an option--</option>
             <option value="sales">sales</option>
