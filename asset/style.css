@@ -1,0 +1,206 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    margin-left: 0em;
+    list-style-type: none;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+}
+
+table{
+    border-spacing: 0;
+}
+
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* sezioni principali */
+
+header {
+    width: 100%;
+    background-color: white;
+}
+
+body{
+    background-color: rgb(179, 177, 177);
+
+}
+
+/* id */
+
+#menu{
+    margin: 5% 30% 3px;
+    background-color: white;
+    border-radius: 3px;
+    padding-top: 25px;
+    padding-left: 3%;
+    padding-bottom: 15px;
+    padding-right: 0%;
+    
+}
+
+#bottone1{
+    padding: 7px;
+    border-radius: 8px;
+    border-color: rgb(27, 133, 255);
+    background-color: rgb(27, 133, 255);
+    color: white;
+    font-weight: bold;
+    border: none; 
+}
+
+#bottone2{
+    padding: 5px;
+    border-radius: 8px;
+    border-color: rgb(124, 124, 124);
+    background-color: white;
+    color: rgb(124, 124, 124);
+    font-weight: bold;
+    margin-left: 1%;
+    
+}
+
+#cont-princ{
+    background-color: white;
+    margin: 0% 30%;
+    border-radius: 3px;
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-bottom: 20%;
+}
+
+/* class */
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
+  
+.logo-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 34px;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sec-title::before{
+    content: '\25BC';
+    font-size: small;
+    margin-right: 3px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.sec-title{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+}
+
+.spunta::before{
+    content: '\2714';
+    margin-right: 9px;
+    border: solid 1px green;
+    border-radius: 50%;
+    padding-right: 4px;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    font-size: 70%;
+    color: green;
+}
+
+.croce::before{
+    content: '\2716';
+    margin-right: 9px;
+    border: solid 1px rgb(255, 0, 0);
+    border-radius: 50%;
+    padding-right: 4px;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    font-size: 70%;
+    color: rgb(255, 0, 0);
+}
+
+.editorial::after{
+    content: 'Editorial';
+    background-color: rgb(0, 119, 255);
+    padding: 2px 4px;
+    border-radius: 9px;
+    color: white;
+    font-size: 60%;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.q1-goals::after{
+    content: 'Q1 Goals';
+    background-color: rgb(143, 60, 199);
+    padding: 2px 4px;
+    border-radius: 9px;
+    color: white;
+    font-size: 60%;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.recruting::after{
+    content: 'Recruting';
+    background-color: rgb(43, 160, 96);
+    padding: 2px 4px;
+    border-radius: 9px;
+    color: white;
+    font-size: 60%;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.mobile::after{
+    content: 'Mobile';
+    background-color: rgb(247, 147, 33);
+    padding: 2px 4px;
+    border-radius: 9px;
+    color: white;
+    font-size: 60%;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.website::after{
+    content: 'Website';
+    background-color: rgb(95, 55, 100);
+    padding: 2px 4px;
+    border-radius: 9px;
+    color: white;
+    font-size: 60%;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.sales::after{
+    content: 'Sales';
+    background-color: rgb(40, 199, 75);
+    padding: 2px 4px;
+    border-radius: 9px;
+    color: white;
+    font-size: 60%;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.contenitore-sezione{
+    margin-top: 5%;
+}
