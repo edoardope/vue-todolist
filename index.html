@@ -19,6 +19,15 @@
       <section id="menu">
         <button id="bottone1" @click="addt">Add Task</button>
         <input v-model="valoreInput" class="txt" type="text">
+        <select name="pets" id="tag-select" v-model="tagSelect">
+            <option value="">--choose an option--</option>
+            <option value="sales">sales</option>
+            <option value="website">website/option>
+            <option value="mobile">mobile</option>
+            <option value="recruting">recruting</option>
+            <option value="q1-goals">q1-goals</option>
+            <option value="editorial">editorial</option>
+        </select>
       </section>
       <!-- contenitore principale -->
       <section id="cont-princ">
@@ -26,7 +35,10 @@
         <div>
           <h1 class="sec-title">New Task</h1>
           <ul>
-             <li :class=" (element.done  == false) ? 'croce' : 'spunta' " class="editorial" v-for="(element, index) in todos" :key ="index">{{ element.text }}<button class="bottone3" @click="done(index)">X</button></li>
+             <li :class=" [(element.done  == false ? 'croce' : 'spunta'), element.tag]" v-for="(element, index) in todos" :key ="index">{{ element.text }}
+             <button class="bottone3" @click="done(index)">cambia stato</button>
+             <button class="bottone3" @click="deleteTask(index)">X</button>
+             </li>
           </ul>
         </div>
       </section>

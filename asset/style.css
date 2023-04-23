@@ -78,6 +78,13 @@ body{
     padding-bottom: 20%;
 }
 
+#tag-select{
+    margin-left: 10px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid blue;
+}
+
 /* class */
 
 .logo {
@@ -218,10 +225,11 @@ body{
 }
 
 .txt{
-    width: 60%;
+    width: 35%;
     margin-left: 10px;
     height: 30px;
     border: 1px solid blue;
     border-radius: 20px;
     padding: 5px;
 }
+
