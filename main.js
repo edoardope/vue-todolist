@@ -16,11 +16,24 @@ createApp({
           text: 'Fare il bucato',
           done: false
         }
-      ]
+      ],
+      valoreInput: '',
 
     }
   },
   methods: {
+    done(index) {
+      this.todos[index].done = !this.todos[index].done;
+    },
+    addt(){
+      let nuovaTask = {
+        text: this.valoreInput,
+        done: false
+      }
+
+      this.todos.push(nuovaTask),
+      this.valoreInput = ''
+    }
 
   }
 
